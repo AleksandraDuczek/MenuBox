@@ -1,0 +1,63 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container * { 
+ background: gray;
+ position: relative;
+ font-family: Raleway;
+ font-size: 16px;
+}
+
+.grid-container *:after { 
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 22% 5.5% 10% 6% 6% 16% 7% 22% 5.5%;
+  grid-template-rows: 5% 14% 5% 14% 5% 23.5% 5% 23.5% 5%;
+  grid-template-areas: "MENU-BOX . . . . . . . ." 
+  "MENU-BOX . BOX-ONE BOX-ONE BOX-ONE BOX-ONE BOX-ONE BOX-ONE ." 
+  "MENU-BOX . . . . . . . ." 
+  "MENU-BOX . . . . BOX-TWO BOX-TWO . ." 
+  "MENU-BOX . . . . . . . ." 
+  "MENU-BOX . BOX-TREE . BOX-FOUR BOX-FOUR . BOX-FIVE ."
+  "MENU-BOX . BOX-TREE . . . . . ." 
+  "MENU-BOX . BOX-TREE . BOX-SIX BOX-SIX BOX-SIX BOX-SIX ." 
+  "MENU-BOX . . . . . . . .";
+}
+
+.BOX-ONE { grid-area: BOX-ONE; 
+   overflow: scroll;
+}
+
+.MENU-BOX { grid-area: MENU-BOX; 
+   height: 100vh;
+   overflow: hidden;
+}
+
+.BOX-TREE { grid-area: BOX-TREE; 
+   overflow: scroll;
+}
+
+.BOX-FOUR { grid-area: BOX-FOUR; 
+   overflow: scroll;
+}
+
+.BOX-TWO { grid-area: BOX-TWO; 
+   overflow: scroll;
+}
+
+.BOX-FIVE { grid-area: BOX-FIVE;
+   overflow: scroll;
+ }
+
+.BOX-SIX { grid-area: BOX-SIX;
+   overflow: scroll;
+ }
+
+ .text {
+   padding: 5px;
+ }
+

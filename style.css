@@ -1,7 +1,7 @@
 html, body, .grid-container { height: 100%; margin: 0; }
 
 .grid-container * { 
- background: gray;
+ background: 	#DCDCDC;
  position: relative;
  font-family: Raleway;
  font-size: 16px;
